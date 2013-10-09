@@ -3,6 +3,8 @@ WHAT IS IT?
 This is a **jQuery Mobile** web site using **knockoutjs** framework for data
 binding, ready to be used with **Phonegap 3.0**.
 
+![screenshot](/screenshot.png "jqm-ko-phonegap screenshot")
+
 TRY IT YOURSELF
 ===============
 Clone the repository
