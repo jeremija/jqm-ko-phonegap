@@ -23,8 +23,7 @@ You might also want to uncomment the
         $(document).trigger('deviceready');
     </script>
 
-part in `web/index.html` to
-fake the Phonegap's `deviceready` event.
+part in `web/index.html` which fakes the Phonegap's `deviceready` event.
 
 RUNNING TESTS
 =============
