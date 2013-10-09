@@ -1,0 +1,6 @@
+merges
+platforms
+plugins
+*.sublime-project
+*.sublime-workspace
+.cordova

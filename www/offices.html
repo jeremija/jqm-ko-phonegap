@@ -1,0 +1,26 @@
+<div data-role="page" id="offices-page" data-theme="b">
+	<div data-role="header">
+		<!--<a href="#leftPanel" data-icon="home">Menu</a>-->
+		<a href="#" data-custom="showLeftPanel">Menu</a>
+		<h1>Offices</h1>
+	</div><!-- #header -->
+	
+	<div data-role="content">
+
+		<div data-bind="collapsibleset: regions">
+			<div data-role="collapsible" data-theme="b">
+				<h3 data-bind="text: $data.name"></h3>
+				<ul data-bind="listview: $data.offices">
+					<li><a href="officeDetails.html" data-transition="slide" data-bind="text: $data.name, event: {vclick: $root.officeClick}"></a></li>
+					<!--<li><p data-bind="text: $data.name"></p></li>-->
+				</ul>
+			</div>
+		</div>
+
+	</div><!-- #content -->
+
+	<div data-role="footer" data-position="fixed">
+		<a data-rel="back" data-icon="back">Back</a>
+	</div>
+
+</div><!-- #page -->

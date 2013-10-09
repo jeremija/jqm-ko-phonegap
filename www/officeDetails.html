@@ -1,0 +1,33 @@
+<div id="office-details-page" data-role="page" data-theme="b">
+	<div data-role="header">
+		<!--<a href="#leftPanel" data-icon="home">Menu</a>-->
+		<a href="#" data-custom="showLeftPanel">Menu</a>
+		<h3>Office details</h3>
+	</div>
+
+	<div data-role="content" data-bind="with: office">
+		<div id="cover" class="container cover" data-bind="backgroundImage: $root.officePhoto">
+			<div class="container-bottom-text">
+				<h2 data-bind="text: name"></h2>
+				<p data-bind="text: address"></p>
+			</div>
+		</div>
+
+		<div id="map" class="container" style="min-height: 15em;">
+
+		</div>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<div class="ui-btn-left">
+			<a data-rel="back" data-role="button" data-icon="back">Back</a>
+		</div>
+		<h3>&nbsp;</h3>
+		<div class="ui-btn-right">
+			<a href="#" data-role="button" data-bind="visible: showRouteButton, vclick: onCalculateRouteClick">Dir</a>
+			<a href="#" data-role="button" data-bind="visible: showLocateMeButton, vclick: onLocateMeClick">Me</a>
+			<a href="#" data-role="button" data-bind="visible: showMapButton, vclick: onCenterClick">Center</a>
+			<a href="#" data-role="button" data-bind="visible: showMapButton, vclick: onMapButtonClick">Map</a>
+		</div>
+	</div>
+</div>

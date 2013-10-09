@@ -1,0 +1,34 @@
+<div id="items-page" data-role="page" data-theme="b">
+	<div data-role="header">
+		<a href="#" data-custom="showLeftPanel">Menu</a>
+		<h1>Items</h1>
+	</div>
+
+	<div data-role="content">
+		<ul data-bind="listview: items">
+			<li data-bind="click: $root.editItem">
+				<p><strong data-bind="text: $data.name"></strong></p>
+				<p data-bind="text: $data.description"></p>
+			</li>
+		</ul>
+	</div>
+
+	<div id="editItemPopup" data-role="popup" data-bind="with: itemToEdit" >
+		<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+		<form class="form">
+			<input type="text" data-bind="value: $data.name" placeholder="name"/>
+			<input type="text" data-bind="value: $data.description" placeholder="description"/>
+		</form>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<div class="ui-btn-left">
+			<a data-role="button" data-icon="back" data-rel="back">Back</a>
+		</div>
+		<h1>&nbsp;</h1>
+		<div class="ui-btn-right">
+			<a href="#" data-role="button" data-icon="plus" data-bind="vclick: addItem">Add</a>
+			<a href="#" data-role="button" data-icon="minus" data-bind="vclick: removeItem">Remove</a>
+		</div>
+	</div> 
+</div>

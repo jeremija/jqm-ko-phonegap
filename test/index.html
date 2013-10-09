@@ -1,0 +1,56 @@
+<html>
+<head>
+	<meta charset="UTF-8"></meta>
+	
+	<!-- test css -->
+	<link rel="stylesheet" href="css/mocha.css"></link>
+	
+	<!-- javascript libraries -->
+	<script type="text/javascript" src="../www/js/lib/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="../www/js/lib/knockout-2.2.1.debug.js"></script>
+
+	<!-- test javascript libraries -->
+	<script type="text/javascript" src="js/lib/mocha.js"></script>
+	<script type="text/javascript" src="js/lib/expect.js"></script>
+
+	<!-- test application javascript -->
+	<script type="text/javascript" src="js/config/test-config.js"></script>
+	<script type="text/javascript" src="js/config/test-functions.js"></script>
+
+	<!-- application javascript -->
+	<script type="text/javascript" src="../www/js/app/app-util.js"></script>
+	<script type="text/javascript" src="../www/js/app/app-log.js"></script>
+	<script type="text/javascript" src="../www/js/app/app-data-offices.js"></script>
+	<script type="text/javascript" src="../www/js/app/app-data.js"></script>
+	<script type="text/javascript" src="../www/js/app/app-domain.js"></script>
+	<script type="text/javascript" src="../www/js/app/domain/Map.js"></script>
+	<script type="text/javascript" src="../www/js/app/app-core.js"></script>
+	<script type="text/javascript" src="../www/js/app/app-panel.js"></script>
+	<!-- mocks -->
+	<script type="text/javascript" src="js/mocks/mock-google-maps-api.js"></script>
+	<!-- application pages -->
+	<script type="text/javascript" src="../www/js/app/pages/items.js"></script>
+	<script type="text/javascript" src="../www/js/app/pages/offices.js"></script>
+	<script type="text/javascript" src="../www/js/app/pages/officeDetails.js"></script>
+
+	<!-- include tests here -->
+	<script type="text/javascript" src="js/tests/app-domain-test.js"></script>
+	<script type="text/javascript" src="js/tests/domain/Map-test.js"></script>
+	<script type="text/javascript" src="js/tests/app-core-test.js"></script>
+	<script type="text/javascript" src="js/tests/app-data-test.js"></script>
+	<script type="text/javascript" src="js/tests/app-panel-test.js"></script>
+	<!-- page handlers tests -->
+	<script type="text/javascript" src="js/tests/pages/items-test.js"></script>
+	<script type="text/javascript" src="js/tests/pages/offices-test.js"></script>
+	<script type="text/javascript" src="js/tests/pages/officeDetails-test.js"></script>
+</head>
+<body>
+	<div id="mocha">
+	</div>
+
+	<div id="test-div" style="display: none;">
+	</div>
+
+	<script type="text/javascript" src="js/config/test-runner.js"></script>
+</body>
+</html>

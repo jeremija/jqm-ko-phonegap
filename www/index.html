@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"></meta>
+	<meta name="viewport" content="user-scalable=no, width=device-width, target-densitydpi=medium-dpi initial-scale=1, maximum-scale=1, minimum-scale=1"></meta>
+
+	<!-- css -->
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.0-alpha.2.css">
+	<link rel="stylesheet" href="css/app.css">
+
+	<!-- javascript libraries -->
+	<script type="text/javascript" src="js/lib/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.mobile-1.4.0-alpha.2.js"></script>
+	<script type="text/javascript" src="js/lib/knockout-2.2.1.debug.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=true&amp;libraries=places"></script>
+
+	<!-- jquery mobile config -->
+	<script type="text/javascript" src="js/app/app-jqm-config.js"></script>
+
+	<!-- application javascript -->
+	<script type="text/javascript" src="js/app/knockout-binding-handlers.js"></script>
+	<script type="text/javascript" src="js/app/app-util.js"></script>
+	<script type="text/javascript" src="js/app/app-log.js"></script>
+	<script type="text/javascript" src="js/app/app-data.js"></script>
+	<script type="text/javascript" src="js/app/app-data-offices.js"></script>
+	<script type="text/javascript" src="js/app/app-domain.js"></script>
+	<script type="text/javascript" src="js/app/domain/Map.js"></script>
+	<script type="text/javascript" src="js/app/app-core.js"></script>
+	<script type="text/javascript" src="js/app/app-panel.js"></script>
+	<!-- application page handlers -->
+	<script type="text/javascript" src="js/app/pages/items.js"></script>
+	<script type="text/javascript" src="js/app/pages/offices.js"></script>
+	<script type="text/javascript" src="js/app/pages/officeDetails.js"></script>
+	<script type="text/javascript" src="js/app/pages/counter.js"></script>	
+
+</head>
+<body>
+	<div id="loading">
+		<p id="message">Waiting for mobileready...</p>
+		<div id="log">
+		</div>
+	</div>
+	<div id="app" class="responsive">
+		<!-- supported panel outside of page from jquery mobile 1.4.0 -->
+		<div data-role="panel" class="responsive" data-theme="b" data-position="left" id="leftPanel" data-position-fixed="true"> <!--data-display="overlay"-->
+			<ul id="myPanelMenu">
+				<li><a name="index-page" href="index.html">Index</a></li>
+				<li><a name="items-page" href="items.html">Items</a></li>
+				<li><a name="offices-page" href="offices.html">Offices</a></li>
+				<li><a name="counter-page" href="counter.html">Counter</a></li>
+			</ul>
+		</div>
+
+		<div data-role="page" id="index-page" data-theme="b">
+
+			<div data-role="header" data-position="fixed">
+				<h1>Index</h1>
+				<!--<a href="#leftPanel" data-icon="home">Menu</a>-->
+				<a href="#" data-custom="showLeftPanel">Menu</a>
+			</div><!-- #header -->
+			
+			<div data-role="content">
+				<div class="ui-grid-b">
+					<div class="ui-block-a">
+						<a data-role="button" href="items.html" data-transition="slide">Items</a>
+					</div>
+					<div class="ui-block-b">
+						<a data-role="button" href="offices.html">Offices</a>
+					</div>
+					<div class="ui-block-c">
+						<a data-role="button" href="counter.html">Counter</a>
+					</div>
+				</div>
+			</div><!-- #content -->
+
+			<!--<div data-role="footer">
+			</div>--><!-- #footer -->
+
+		</div>
+	</div>
+
+	<!-- application initialization -->
+	<script type="text/javascript" src="js/app/app-init.js"></script>
+	<!-- phonegap library -->
+	<script type="text/javascript" src="phonegap.js"></script>
+
+	<!-- uncomment this script to test in the web browser -->
+	<!--<script>
+		$(document).trigger('deviceready');
+	</script>-->
+
+</body>
+</html>
