@@ -5,8 +5,13 @@ binding, ready to be used with **Phonegap 3.0**.
 
 TRY IT YOURSELF
 ===============
+Clone the repository
+
+    git clone https://github.com/jeremija/jqm-ko-phonegap.git
+    cd jqm-ko-phonegap
+
 To run it in a web browser you must run a simple web server. If you have
-python installed, run the following command in the root of the project: 
+python installed, run the following command in root folder of the project: 
 
     python -m SimpleHTTPServer
 
