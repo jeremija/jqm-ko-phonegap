@@ -32,7 +32,10 @@ RUNNING TESTS
 This project uses **mochajs** testing framework for unit tests.
 
 Go to the root folder of the project and execute `scripts/run-tests.sh`. The
-prerequisites for running tests are **JSHint** and **mocha-phantomjs**. 
+prerequisites for running tests in the console are **JSHint** and
+**mocha-phantomjs**. You can install those packages with the following command:
 
-Alternatively, you can open the `test/index.html` file in a browser and the
+    npm install jshint mocha-phantomjs 
+
+Alternatively, you can open the `test/index.html` file in a browser and mocha 
 tests will be run automatically.
