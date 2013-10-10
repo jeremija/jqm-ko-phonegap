@@ -17,7 +17,7 @@ python installed, run the following command in root folder of the project:
 
     python -m SimpleHTTPServer
 
-Then navigate to `http://localhost:8000/web/index.html` in your browser.
+Then navigate to `http://localhost:8000/www/index.html` in your browser.
 
 You might also want to uncomment the
 
@@ -25,7 +25,7 @@ You might also want to uncomment the
         $(document).trigger('deviceready');
     </script>
 
-part in `web/index.html` which fakes the Phonegap's `deviceready` event.
+part in `www/index.html` which fakes the Phonegap's `deviceready` event.
 
 RUNNING TESTS
 =============
